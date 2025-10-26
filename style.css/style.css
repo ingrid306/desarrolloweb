@@ -1,0 +1,678 @@
+/* Variables CSS para colores y tipografía */
+:root {
+    --primary-color: #4A90E2; /* Azul vibrante */
+    --secondary-color: #FFC107; /* Amarillo cálido */
+    --dark-color: #2C3E50; /* Gris oscuro casi negro */
+    --light-color: #ECF0F1; /* Gris claro */
+    --text-color: #34495E; /* Gris azulado para texto general */
+    --white-color: #FFFFFF;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --border-radius: 8px;
+}
+
+/* Reset básico y estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--light-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilos de botones */
+.btn-primary, .btn-secondary, .auth-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+.btn-primary:hover {
+    background-color: #3A7BD5; /* Un tono más oscuro */
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: var(--dark-color);
+    box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+.btn-secondary:hover {
+    background-color: #FFDA47; /* Un tono más claro */
+    transform: translateY(-2px);
+}
+
+/* Estilos de secciones */
+section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: var(--dark-color);
+    font-weight: 700;
+}
+
+/* Header y Navbar */
+.header {
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: var(--white-color);
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul li {
+    margin-left: 30px;
+}
+
+.navbar ul li a {
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    padding: 5px 0;
+}
+
+.navbar ul li a:hover {
+    color: var(--secondary-color);
+}
+
+/* Botones de Login/Register en Navbar */
+.btn-login, .btn-register {
+    padding: 8px 15px;
+    font-size: 0.9em;
+    border-radius: 5px;
+}
+
+.btn-login {
+    background-color: transparent;
+    border: 1px solid var(--white-color);
+    color: var(--white-color);
+}
+
+.btn-login:hover {
+    background-color: var(--white-color);
+    color: var(--dark-color);
+}
+
+.btn-register {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    margin-left: 10px;
+}
+
+.btn-register:hover {
+    background-color: #3A7BD5;
+}
+
+/* Menú Hamburguesa (CSS puro) */
+.menu-toggle {
+    display: none; /* Oculta el checkbox */
+}
+
+.menu-icon {
+    display: none; /* Oculta el icono de hamburguesa por defecto */
+    font-size: 1.8em;
+    cursor: pointer;
+    color: var(--white-color);
+}
+
+/* Estilos para el Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://placehold.co/1920x800/2C3E50/FFFFFF?text=Fondo+Libros'); /* Fondo oscuro con superposición */
+    background-size: cover;
+    background-position: center;
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh; /* Altura mínima para que sea visible */
+    padding: 100px 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-content h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 1.3em;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+/* Estilos para About Us / Beneficios */
+.about-section {
+    background-color: var(--white-color);
+    padding: 80px 20px;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.benefit-card {
+    background-color: var(--light-color);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 5px 15px var(--shadow-color);
+    transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-card .icon-large {
+    font-size: 3em;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.benefit-card h3 {
+    font-size: 1.5em;
+    color: var(--dark-color);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.benefit-card p {
+    font-size: 1em;
+    color: var(--text-color);
+}
+
+/* Estilos para la sección de Productos (Cards) */
+.products-section {
+    background-color: #F8F8F8;
+    padding: 80px 20px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.product-card {
+    background-color: var(--white-color);
+    border-radius: var(--border-radius);
+    box-shadow: 0 5px 15px var(--shadow-color);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    width: 100%;
+    height: 350px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+    border-bottom: 1px solid #eee;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 1.4em;
+    color: var(--dark-color);
+    margin-bottom: 10px;
+    font-weight: 600;
+    padding: 0 15px;
+}
+
+.product-card .product-price {
+    font-size: 1.2em;
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* Estilos para la sección de Contacto */
+.contact-section {
+    background-color: var(--white-color);
+    padding: 80px 20px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.contact-info, .contact-form-container {
+    background-color: var(--light-color);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+.contact-info h3, .contact-form-container h3 {
+    font-size: 1.8em;
+    color: var(--dark-color);
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+}
+
+.contact-info p i {
+    margin-right: 15px;
+    color: var(--primary-color);
+    font-size: 1.2em;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--dark-color);
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    font-size: 1em;
+    color: var(--text-color);
+    background-color: var(--white-color);
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact-form .btn-primary {
+    width: auto;
+    padding: 12px 30px;
+    font-size: 1.1em;
+}
+
+.map-container {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.map-container h3 {
+    font-size: 1.8em;
+    color: var(--dark-color);
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    padding: 40px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-links a {
+    color: var(--white-color);
+    font-size: 1.5em;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--secondary-color);
+}
+
+/* Estilos para Páginas de Autenticación (Login/Register) */
+.auth-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, var(--primary-color), #6A5ACD); /* Degradado de fondo */
+    padding: 20px;
+}
+
+.auth-container {
+    background-color: var(--white-color);
+    padding: 40px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+.auth-title {
+    font-size: 2em;
+    color: var(--dark-color);
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.auth-form .form-group {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.auth-form label {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: var(--dark-color);
+}
+
+.auth-form input[type="text"],
+.auth-form input[type="email"],
+.auth-form input[type="password"] {
+    padding: 14px;
+    font-size: 1.1em;
+    border-radius: var(--border-radius);
+    border: 1px solid #ddd;
+    background-color: #F9F9F9;
+}
+
+.auth-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.2em;
+    margin-top: 15px;
+}
+
+.auth-link-text {
+    margin-top: 25px;
+    font-size: 1em;
+    color: var(--text-color);
+}
+
+.auth-link-text a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.auth-link-text a:hover {
+    text-decoration: underline;
+}
+
+/* ==========================================================================
+   Media Queries para Responsividad
+   ========================================================================== */
+
+/* Tablet y dispositivos más pequeños (ancho máximo de 992px) */
+@media (max-width: 992px) {
+    .header-content {
+        flex-direction: row; /* Mantener en fila */
+        justify-content: space-between; /* Espaciar elementos */
+        align-items: center;
+    }
+
+    .navbar {
+        display: none; /* Oculta la barra de navegación por defecto */
+        width: 100%;
+        flex-direction: column;
+        background-color: var(--dark-color);
+        position: absolute;
+        top: 80px; /* Debajo del header */
+        left: 0;
+        padding: 20px 0;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar ul li {
+        margin: 15px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar ul li a {
+        display: block;
+        padding: 10px 0;
+    }
+
+    /* Muestra el icono de hamburguesa */
+    .menu-icon {
+        display: block;
+    }
+
+    /* Cuando el checkbox está marcado, muestra el navbar */
+    .menu-toggle:checked + .menu-icon + .navbar {
+        display: flex;
+    }
+
+    /* Ajustes para el hero section */
+    .hero-content h1 {
+        font-size: 2.8em;
+    }
+
+    .hero-content p {
+        font-size: 1.1em;
+    }
+
+    /* Ajustes para la sección de beneficios */
+    .benefits-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    /* Ajustes para la sección de productos */
+    .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .product-image {
+        height: 300px; /* Ajusta la altura de las imágenes en tablets */
+    }
+
+    /* Ajustes para la sección de contacto */
+    .contact-grid {
+        grid-template-columns: 1fr; /* Una columna en tablets */
+    }
+}
+
+/* Teléfonos móviles (ancho máximo de 768px) */
+@media (max-width: 768px) {
+    section {
+        padding: 60px 0;
+    }
+
+    section h2 {
+        font-size: 2em;
+    }
+
+    .hero-section {
+        min-height: 60vh;
+        padding: 80px 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .btn-primary, .btn-secondary {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+
+    .benefits-grid, .product-grid {
+        grid-template-columns: 1fr; /* Una columna en móviles */
+    }
+
+    .product-image {
+        height: 280px; /* Altura de imagen más pequeña en móviles */
+    }
+
+    .contact-info, .contact-form-container {
+        padding: 25px;
+    }
+
+    .contact-info h3, .contact-form-container h3, .map-container h3 {
+        font-size: 1.5em;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea,
+    .auth-form input[type="text"],
+    .auth-form input[type="email"],
+    .auth-form input[type="password"] {
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    .auth-container {
+        padding: 30px;
+    }
+
+    .auth-title {
+        font-size: 1.8em;
+    }
+
+    .auth-btn {
+        padding: 12px;
+        font-size: 1.1em;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .social-links {
+        margin-top: 15px;
+    }
+}
+
+/* Teléfonos móviles pequeños (ancho máximo de 480px) */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.5em;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8em;
+    }
+
+    .hero-content p {
+        font-size: 0.9em;
+    }
+
+    .btn-primary, .btn-secondary {
+        padding: 8px 15px;
+        font-size: 0.8em;
+    }
+
+    .benefit-card, .product-card, .contact-info, .contact-form-container {
+        padding: 20px;
+    }
+
+    .benefit-card .icon-large {
+        font-size: 2.5em;
+    }
+
+    .product-image {
+        height: 250px;
+    }
+
+    .auth-container {
+        padding: 20px;
+    }
+}
