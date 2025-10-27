@@ -1,22 +1,59 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
-    <link rel="stylesheet" href="style.css/style.css"> </head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css/style.css">
+  <link rel="stylesheet" href="style.css/login.css">
+</head>
+
 <body class="auth-page">
-    <div class="auth-container">
-        <h2>Crear Cuenta</h2>
-        <form class="auth-form">
-            <input type="text" placeholder="Nombre de Usuario" required>
-            <input type="email" placeholder="Email" required>
-            <input type="password" placeholder="Contraseña" required>
-            <input type="password" placeholder="Confirmar Contraseña" required>
-            <button type="submit" class="btn-auth">Registrarse</button>
-        </form>
-        <p>¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a></p>
-        <a href="index.html" class="btn-back">← Volver a la Home</a>
-    </div>
+  <div class="auth-container">
+    <h2>Crear Cuenta</h2>
+    <form class="auth-form" id="register-form">
+      <input type="text" id="nombre" placeholder="Nombre completo" required>
+      <input type="email" id="email" placeholder="Correo electrónico" required>
+      <input type="password" id="password" placeholder="Contraseña" required minlength="6">
+      <input type="password" id="confirm-password" placeholder="Confirmar contraseña" required minlength="6">
+      <button type="submit" class="btn-auth">Registrarse</button>
+    </form>
+
+    <p>¿Ya tienes cuenta? <a href="login.html">Inicia sesión aquí</a></p>
+    <a href="index.html" class="btn-back">← Volver a la Home</a>
+  </div>
+
+  <script>
+    // Validación básica del formulario de registro
+    document.getElementById('register-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const nombre = document.getElementById('nombre').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value;
+      const confirm = document.getElementById('confirm-password').value;
+
+      if (!/^\S+@\S+\.\S+$/.test(email)) {
+        alert("Por favor, ingresa un correo electrónico válido.");
+        return;
+      }
+
+      if (password.length < 6) {
+        alert("La contraseña debe tener al menos 6 caracteres.");
+        return;
+      }
+
+      if (password !== confirm) {
+        alert("Las contraseñas no coinciden.");
+        return;
+      }
+
+      // Simular registro exitoso
+      alert("¡Registro exitoso! Ya puedes iniciar sesión.");
+      window.location.href = "login.html";
+    });
+  </script>
 </body>
 </html>

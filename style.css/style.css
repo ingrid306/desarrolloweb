@@ -1,12 +1,12 @@
 /* Variables CSS para colores y tipografía */
 :root {
-    --primary-color: #4A90E2; /* Azul vibrante */
+    --primary-color: #03101f; /* Azul vibrante */
     --secondary-color: #FFC107; /* Amarillo cálido */
-    --dark-color: #2C3E50; /* Gris oscuro casi negro */
+    --dark-color: #4b0226; /* Gris oscuro casi negro */
     --light-color: #ECF0F1; /* Gris claro */
-    --text-color: #34495E; /* Gris azulado para texto general */
+    --text-color: #03509e; /* Gris azulado para texto general */
     --white-color: #FFFFFF;
-    --shadow-color: rgba(0, 0, 0, 0.1);
+    --shadow-color: rgba(25, 99, 35, 0.1);
     --border-radius: 8px;
 }
 
