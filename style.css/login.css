@@ -1,9 +1,9 @@
 /* ======= LOGIN PAGE ======= */
 :root {
-  --color-primary: #0b79d0;
-  --color-secondary: #007bff;
-  --color-bg: #f4f7fb;
-  --color-text: #333;
+  --color-primary:#030013e8;;
+  --color-secondary: #d4cdda;
+  --color-bg: #99929c;
+  --color-text: #7c1774;
   --radius: 10px;
   --transition: all 0.3s ease;
 }

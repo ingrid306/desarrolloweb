@@ -1,12 +1,12 @@
 /* Variables CSS para colores y tipografía */
 :root {
     --primary-color: #03101f; /* Azul vibrante */
-    --secondary-color: #FFC107; /* Amarillo cálido */
-    --dark-color: #4b0226; /* Gris oscuro casi negro */
+    --secondary-color: #f8d7ed; /* Amarillo cálido */
+    --dark-color: #030013e8; /* Gris oscuro casi negro */
     --light-color: #ECF0F1; /* Gris claro */
-    --text-color: #03509e; /* Gris azulado para texto general */
+    --text-color: #0c0aa1; /* Gris azulado para texto general */
     --white-color: #FFFFFF;
-    --shadow-color: rgba(25, 99, 35, 0.1);
+    --shadow-color: rgba(235, 235, 235, 0.1);
     --border-radius: 8px;
 }
 
@@ -86,7 +86,7 @@ section h2 {
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 10px rgba(180, 47, 47, 0.2);
 }
 
 .header-content {
@@ -96,7 +96,7 @@ section h2 {
     flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
 }
 
-.logo {
+.logo {   
     font-size: 1.8em;
     font-weight: 700;
     color: var(--white-color);
@@ -168,7 +168,7 @@ section h2 {
 
 /* Estilos para el Hero Section */
 .hero-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://placehold.co/1920x800/2C3E50/FFFFFF?text=Fondo+Libros'); /* Fondo oscuro con superposición */
+    background: linear-gradient(rgba(24, 1, 1, 0.678), rgba(31, 151, 221, 0.719)), url('https://ik.imagekit.io/vrwigimieh/ik-genimg-prompt-books%20violet/5cee27e1-b685-4f47-b430-33bd021c0541/image.jpg?tr=f-jpg%2Ch-1024%2Cw-1024&ik-s=06bc104a209b20c87f64761aae52e90818bf06de'); /* Fondo oscuro con superposición */
     background-size: cover;
     background-position: center;
     color: var(--white-color);
@@ -205,13 +205,13 @@ section h2 {
 .benefits-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    margin-top: 50px;
+    gap: 50px;
+    margin-top: 70px;
 }
 
 .benefit-card {
     background-color: var(--light-color);
-    padding: 30px;
+    padding: 40px;
     border-radius: var(--border-radius);
     box-shadow: 0 5px 15px var(--shadow-color);
     transition: transform 0.3s ease;
@@ -270,7 +270,7 @@ section h2 {
 
 .product-image {
     width: 100%;
-    height: 350px; /* Altura fija para las imágenes */
+    height: 600px; /* Altura fija para las imágenes */
     object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
     border-bottom: 1px solid #eee;
     margin-bottom: 15px;
@@ -506,7 +506,7 @@ section h2 {
         top: 80px; /* Debajo del header */
         left: 0;
         padding: 20px 0;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 5px 10px rgba(170, 21, 21, 0.3);
         border-top: 1px solid rgba(255, 255, 255, 0.1);
     }
 
