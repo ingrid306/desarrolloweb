@@ -12,7 +12,7 @@ El objetivo principal fue construir un sitio funcional, estéticamente atractivo
 * [x] Desarrollado completamente con **HTML y CSS**
 * [x] **Navbar** con navegación interna (scroll hacia cada sección)
 * [x] Sección **Hero / Portada** con mensaje principal de la librería
-* [x] Sección **Sobre Nosotros** (About Us) con información de la librería
+* [x] Sección **Sobre Nosotros** (About Us)beneficios de comprar en la librería Geminis
 * [x] Sección de **cards** con imágenes y descripción de productos/libros
 * [x] Sección de **Contacto** con formulario, información de ubicación y mapa
 * [x] **Footer** con información y enlaces
@@ -53,12 +53,12 @@ La paleta de colores y tipografía se eligieron para reflejar una **atmósfera t
 
 ## 📖 Estructura del sitio
 
-* **Home / Hero:** presentación principal de la librería
-* **About Us:** historia, misión y valores de Librería Géminis
-* **Productos / Libros destacados:** sección con cards de libros y precios
-* **Contacto:** formulario de contacto, dirección e iframe con mapa
-* **Login / Registro:** páginas externas para clientes
-* **Footer:** enlaces útiles y redes sociales
+* **Home / Hero:** Presentación principal de la librería
+* **About Us:** Beneficios de comprar en la librería.
+* **Productos / Libros destacados:** Sección con cards de libros y precios
+* **Contacto:** Formulario de contacto, dirección e iframe con mapa
+* **Login / Registro:** Páginas externas para clientes
+* **Footer:** Enlaces útiles y redes sociales
 
 ---
 
