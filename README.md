@@ -44,6 +44,7 @@ La paleta de colores y tipografía se eligieron para reflejar una **atmósfera t
 ## 🚀 Deploy y repositorio
 
 🔗 **Demo en Vercel:** https://desarrolloweb-liart.vercel.app/
+
 💾 **Repositorio en GitHub:** https://github.com/ingrid306/desarrolloweb
 
 *(Reemplazá los enlaces con los tuyos reales antes de entregar.)*
