@@ -43,8 +43,8 @@ La paleta de colores y tipografía se eligieron para reflejar una **atmósfera t
 
 ## 🚀 Deploy y repositorio
 
-🔗 **Demo en Vercel:** [https://libreria-geminis.vercel.app](https://libreria-geminis.vercel.app)
-💾 **Repositorio en GitHub:** [https://github.com/tuusuario/libreria-geminis](https://github.com/tuusuario/libreria-geminis)
+🔗 **Demo en Vercel:** https://desarrolloweb-liart.vercel.app/
+💾 **Repositorio en GitHub:** https://github.com/ingrid306/desarrolloweb
 
 *(Reemplazá los enlaces con los tuyos reales antes de entregar.)*
 
@@ -63,11 +63,7 @@ La paleta de colores y tipografía se eligieron para reflejar una **atmósfera t
 
 ## 👩‍💻 Autor
 
-Desarrollado por **[Tu Nombre]**
-📧 Contacto: [[tuemail@example.com](mailto:tuemail@example.com)]
-💼 LinkedIn: [tu-linkedin]
+Desarrollado por **[Ingrid Valle]**
+📧 Contacto: inpaito87@gmail.com
 
----
 
-¿Querés que te lo deje con **formato markdown (.md)** listo para copiar y pegar en GitHub (con títulos, emojis y links ya estilizados)?
-Puedo generarlo con la sintaxis exacta de Markdown para que quede prolijo al mostrarlo en tu repositorio.
