@@ -28,9 +28,9 @@ El objetivo principal fue construir un sitio funcional, estéticamente atractivo
 
 * **HTML5**
 * **CSS3**
-* **Flexbox** y **Grid Layout**
+* **Flexbox**
 * **Responsive Design (Mobile First)**
-* **Google Fonts** y **CSS Variables** para la personalización del estilo
+* **CSS Variables** para la personalización del estilo
 
 ---
 
