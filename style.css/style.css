@@ -1,10 +1,10 @@
 /* Variables CSS para colores y tipografía */
 :root {
     --primary-color: #03101f; /* Azul vibrante */
-    --secondary-color: #f8d7ed; /* Amarillo cálido */
+    --secondary-color: #bbf163; /* Amarillo cálido */
     --dark-color: #030013e8; /* Gris oscuro casi negro */
-    --light-color: #ECF0F1; /* Gris claro */
-    --text-color: #0c0aa1; /* Gris azulado para texto general */
+    --light-color: #bec6e9; /* Gris claro */
+    --text-color: #080752; /* Gris azulado para texto general */
     --white-color: #FFFFFF;
     --shadow-color: rgba(235, 235, 235, 0.1);
     --border-radius: 8px;
